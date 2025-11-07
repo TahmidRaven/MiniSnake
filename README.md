@@ -8,6 +8,16 @@ Step back into the golden age of arcade games with **Mini Snake**, a fast-paced,
 Challenge yourself to eat as much food as you can in **30 seconds** while avoiding walls and your own growing tail.
 
 ---
+
+
+## 🚀 Play Now  
+🎯 **The game is live!**  
+Play instantly on your browser here:  
+👉 [**MiniSnake on Itch.io**](https://ravendeath.itch.io/minisnake)
+
+No download required — just click, play, and start your 30-second challenge!
+
+---
 <img width="1528" height="924" alt="Screenshot 2025-11-07 055801" src="https://github.com/user-attachments/assets/647c097c-1f17-4778-a4cc-ae25e6ef4700" />
 
 ## 🕹️ Gameplay Features
