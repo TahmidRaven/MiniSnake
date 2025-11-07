@@ -1,0 +1,68 @@
+[gd_scene load_steps=4 format=3 uid="uid://dabcjuwjchbb8"]
+
+[ext_resource type="Texture2D" uid="uid://cmdbqye3m76cw" path="res://bg11.jpg" id="1_0xm2m"]
+[ext_resource type="Texture2D" uid="uid://ds6uhyrq88fp5" path="res://greg-rosenke-6QnEf_b47eA-unsplash.jpg" id="1_h2yge"]
+[ext_resource type="Script" uid="uid://cfuvaqlwho8rs" path="res://main.gd" id="1_ig7tw"]
+
+[node name="GameRoot" type="Node2D"]
+position = Vector2(427.534, 92.6211)
+
+[node name="Background_image" type="Node2D" parent="."]
+
+[node name="TextureRect" type="TextureRect" parent="Background_image"]
+z_index = -1
+offset_left = -634.534
+offset_top = -340.621
+offset_right = 5443.47
+offset_bottom = 3762.38
+scale = Vector2(0.36, 0.36)
+texture = ExtResource("1_h2yge")
+stretch_mode = 5
+
+[node name="Background" type="Node2D" parent="."]
+visible = false
+position = Vector2(-427.534, -92.6211)
+
+[node name="TextureRect" type="TextureRect" parent="Background"]
+visible = false
+light_mask = 17
+z_index = -1
+scale = Vector2(0.81, 0.81)
+texture = ExtResource("1_0xm2m")
+stretch_mode = 6
+metadata/_edit_use_anchors_ = true
+
+[node name="Main" type="Node2D" parent="."]
+script = ExtResource("1_ig7tw")
+
+[node name="ScoreLabel" type="Label" parent="Main"]
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 70.0
+offset_bottom = 60.0
+text = "SCORE: "
+metadata/_edit_use_anchors_ = true
+
+[node name="TimerLabel" type="Label" parent="Main"]
+offset_left = 10.0
+offset_top = 50.0
+offset_right = 63.0
+offset_bottom = 103.0
+text = "TIMER:"
+metadata/_edit_use_anchors_ = true
+
+[node name="RestartButton" type="Button" parent="Main"]
+offset_left = -190.534
+offset_top = 16.378899
+offset_right = -115.534
+offset_bottom = 66.37891
+text = "RESTART"
+metadata/_edit_use_anchors_ = true
+
+[node name="PauseButton" type="Button" parent="Main"]
+offset_left = -84.534
+offset_top = 15.378906
+offset_right = -25.533997
+offset_bottom = 65.37891
+text = "PAUSE"
+metadata/_edit_use_anchors_ = true
